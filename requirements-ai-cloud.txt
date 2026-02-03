@@ -1,0 +1,28 @@
+#
+# Optional AI dependencies for *cloud providers*
+#
+# NOTE: These packages can have a complex dependency graph. Install only what you need.
+# If pip struggles, install one provider at a time (e.g. only google-* or only azure-*).
+#
+# Install (from backend/):
+#   python -m pip install -r requirements.txt
+#   python -m pip install -r requirements-ai-cloud.txt
+#
+
+openai==2.16.0
+
+# Google
+google-cloud-speech==2.36.0
+google-cloud-texttospeech==2.34.0
+google-generativeai==0.8.6
+
+# Azure
+azure-cognitiveservices-speech==1.47.0
+
+# Anthropic
+anthropic==0.76.0
+
+# Other providers
+assemblyai==0.48.4
+elevenlabs==2.32.0
+

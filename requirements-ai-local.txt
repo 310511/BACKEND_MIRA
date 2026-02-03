@@ -1,0 +1,27 @@
+#
+# Optional AI dependencies for *local/offline-capable* voice pipeline
+#
+# Includes:
+# - Whisper local STT (module name "whisper")
+# - Swara/IndicTTS path (transformers + torch + soundfile)
+# - Basic audio utilities used by the backend
+#
+# Install (from backend/):
+#   python -m pip install -r requirements.txt
+#   python -m pip install -r requirements-ai-local.txt
+#
+
+openai-whisper==20250625
+
+# Swara / HF TTS pipeline
+transformers==5.0.0
+torch==2.10.0
+soundfile==0.13.1
+
+# Audio processing helpers used in some code paths
+pydub==0.25.1
+librosa==0.11.0
+
+# Offline TTS fallback used by Swara fallback code path
+pyttsx3==2.99
+

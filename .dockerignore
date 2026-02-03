@@ -1,0 +1,26 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.Python
+
+.env
+.env.*
+.emv
+
+venv/
+ENV/
+.env/
+
+.git/
+.gitignore
+
+*.log
+
+# Large / generated audio artifacts
+*.wav
+*.mp3
+*.ogg
+
+tmp/
